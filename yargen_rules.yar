@@ -590,7 +590,7 @@ rule K8tools_sshtest {
       $x17 = "mismatchadvapi32.dllbad flushGenbad g statusbad g0 stackbad recoverycan't happencas64 failedchan receivecontext.TODOdumping heap" ascii /* score: '32.00'*/
       $x18 = "MB) workers= called from  flushedWork  gcscanvalid  heap_marked= idlethreads= is nil, not  nStackRoots= s.spanclass= span.base()" ascii /* score: '32.00'*/
       $x19 = "bytes.Buffer: reader returned negative count from ReadgcControllerState.findRunnable: blackening not enabledinternal error: poll" ascii /* score: '31.00'*/
-      $s20 = "garbage collection scangcDrain phase incorrectglobalRequestFailureMsgglobalRequestSuccessMsginterrupted system callinvalid m->lo" ascii /* score: '30.00'*/
+      $x20 = "garbage collection scangcDrain phase incorrectglobalRequestFailureMsgglobalRequestSuccessMsginterrupted system callinvalid m->lo" ascii /* score: '30.00'*/
    condition:
       uint16(0) == 0x5a4d and filesize < 7000KB and
       ( pe.imphash() == "1c2a6fbef41572f4c9ce8acb5a63cde7" or 1 of ($x*) )
